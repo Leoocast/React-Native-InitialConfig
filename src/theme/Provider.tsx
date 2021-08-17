@@ -1,5 +1,4 @@
 import React from 'react'
-import { View, Text } from 'react-native'
 import theme from './theme'
 
 export const ThemeContext = React.createContext(theme)

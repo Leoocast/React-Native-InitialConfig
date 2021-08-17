@@ -11,18 +11,20 @@ const TabNavigation = () => {
   return (
     <Tab.Navigator 
     screenOptions={{
-     tabBarActiveTintColor: '#03BFB6',
-     tabBarInactiveTintColor: '#99A9BB',
-     tabBarStyle: {
-       elevation: 0,
-       height: 72,
-     },
-     tabBarLabelStyle: {
-       fontSize: 12,
-       margin: 0,
-       fontFamily: 'ApercuPro-Bold',
-       paddingBottom: 8,
-     },
+      headerShown: false,
+      tabBarActiveTintColor: '#4ba2b1',
+      tabBarInactiveTintColor: '#99A9BB',
+      tabBarStyle: {
+        elevation: 0,
+        height: 60,
+        backgroundColor: '#0b2e3b',
+        borderTopWidth: 0
+      },
+      tabBarLabelStyle: {
+        fontSize: 12,
+        fontFamily: 'ApercuPro-Bold',
+        paddingBottom: 5,
+      },
    }}>
       <Tab.Screen name="Home" component={HomeStackNavigation} />
     </Tab.Navigator>
